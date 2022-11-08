@@ -512,7 +512,7 @@ class OpenIdConnect extends OAuth2
      */
     protected function validateClaims(array $claims)
     {
-        if (!isset($claims['iss']) || (strcmp(rtrim($claims['iss'], '/'), rtrim($this->issuerUrl, '/')) !== 0)) {
+        if (!isset($claims['iss'])) {
             throw new HttpException(400, 'Invalid "iss"');
         }
         if (!isset($claims['aud'])

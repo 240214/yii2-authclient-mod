@@ -25,13 +25,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-composer require --prefer-dist yiisoft/yii2-authclient
-```
-
-or add
-
-```json
-"yiisoft/yii2-authclient": "~2.2.0"
+composer require --prefer-dist armenium/yii2-authclient-mod
 ```
 
 to the `require` section of your composer.json.
